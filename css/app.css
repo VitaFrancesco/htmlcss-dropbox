@@ -18,3 +18,23 @@ img{
     max-width: 100%;
 }
 
+/* custom properties */
+
+:root{
+    --container-width: 1220px;
+}
+
+/* layout */
+
+.container{
+    max-width: var(--container-width);
+    margin: auto;
+}
+
+.container.full{
+    --container-width: 100%;
+}
+
+.container.small{
+    --container-width: 1020px;
+}
