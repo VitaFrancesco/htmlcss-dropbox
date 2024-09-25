@@ -22,6 +22,7 @@ img{
 
 :root{
     --container-width: 1220px;
+    --cta-background-color: #0061FF;
 }
 
 /* layout */
@@ -37,4 +38,38 @@ img{
 
 .container.small{
     --container-width: 1020px;
+    
 }
+
+[class*="cta"]{
+    background-color: var(--cta-background-color);
+    color: white;
+}
+
+/* header */
+
+.navbar{
+    font-size: 14px;
+    padding: 24px 12px;
+}
+
+.navbar .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .col{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo{
+    display: block;
+}
+
+.cta-navbar{
+    padding: 10px 10px;
+}
+
