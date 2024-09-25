@@ -1,3 +1,11 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+body{
+    font-family: "Inria Serif", serif;
+}
+
 /* reset rules */
 *{
     box-sizing: border-box;
@@ -21,8 +29,9 @@ img{
 /* custom properties */
 
 :root{
-    --container-width: 1220px;
+    --container-width: 1210px;
     --cta-background-color: #0061FF;
+    --section-bg-light-blue: #B4D0E7;
 }
 
 /* layout */
@@ -49,7 +58,7 @@ img{
 /* header */
 
 .navbar{
-    font-size: 14px;
+    font-size: 18px;
     padding: 24px 12px;
 }
 
@@ -70,6 +79,62 @@ img{
 }
 
 .cta-navbar{
-    padding: 10px 10px;
+    padding: 10px 18px;
 }
 
+/* main */
+
+p{
+    font-size: 18px;
+}
+
+/* hero */
+
+.hero{
+    background-color: var(--section-bg-light-blue);
+}
+
+h1{
+    font-size: 84px;
+}
+
+.title{
+    margin-bottom: 70px;
+}
+
+.hero .row{;
+    display: flex;
+}
+
+.cta-hero{
+    padding: 14px 16px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.margin-top{
+    margin-top: auto;
+}
+
+.arrow{
+    font-size: 42px;
+}
+
+/* utilities */
+
+.col-33{
+    width: calc(100% / 3);
+}
+
+.col-66{
+    width: calc((100% / 3) * 2);
+}
+
+.col-100{
+    width: 100%;
+}
