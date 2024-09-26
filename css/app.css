@@ -389,6 +389,26 @@ input{
     margin-bottom: 2px;
 }
 
+/* to-your-comapy */
+
+.to-your-company{
+    padding: 130px 0;
+    background-color: var(--section-bg-light-blue);
+}
+
+.to-your-company .white{
+    border: none;
+}
+
+.btn-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.to-your-company h2{
+    margin: 0;
+}
 
 /* utilities */
 
@@ -419,6 +439,10 @@ input{
 .width-66{
     width: calc(2 * (100 / 3));
     display: inline-block;
+}
+
+.red{
+    color: #621135;
 }
 
 /* debug rules */
