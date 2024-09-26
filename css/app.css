@@ -29,7 +29,7 @@ img{
 /* custom properties */
 
 :root{
-    --container-width: 1210px;
+    --container-width: 1200px;
     --cta-background-color: #0061FF;
     --section-bg-light-blue: #B4D0E7;
 }
@@ -46,20 +46,27 @@ img{
 }
 
 .container.small{
-    --container-width: 1020px;
-    
+    --container-width: 1000px;
+    margin: auto;
 }
 
-[class*="cta"]{
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn{
     background-color: var(--cta-background-color);
     color: white;
+    padding: 10px 16px;
+    line-height: 34px;
 }
 
 /* header */
 
 .navbar{
-    font-size: 18px;
-    padding: 24px 12px;
+    font-size: 16px;
+    padding: 16px 12px;
 }
 
 .navbar .row{
@@ -68,62 +75,130 @@ img{
     align-items: center;
 }
 
-.navbar .col{
+.navbar .menu{
     display: flex;
     align-items: center;
-    gap: 40px;
 }
 
-.logo{
+.menu a{
     display: block;
+    padding: 0 20px;
+    line-height: 34px;
+}
+.row > *{
+    padding: 0 25px;
 }
 
-.cta-navbar{
-    padding: 10px 18px;
+.row.not_gutten > *{
+    padding: 0;
+}
+
+.navbar .menu .logo{
+    display: block;
+    padding-left: 0;
 }
 
 /* main */
 
-p{
-    font-size: 18px;
+p, span{
+    font-size: 16px;
+}
+
+h2{
+    font-size: 38px;
+}
+
+h3{
+    font-size: 22px;
 }
 
 /* hero */
 
 .hero{
     background-color: var(--section-bg-light-blue);
+    padding-top: 80px;
+    margin-bottom: 140px;
 }
 
 h1{
-    font-size: 84px;
+    font-size: 80px;
 }
 
 .title{
     margin-bottom: 70px;
 }
 
-.hero .row{;
-    display: flex;
-}
-
 .cta-hero{
     padding: 14px 16px;
 }
 
-.column{
+.hero-content{
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding-bottom: 30px;
 }
 
-.margin-top{
-    margin-top: auto;
-}
-
 .arrow{
     font-size: 42px;
+    margin-top: auto;
+
 }
+
+/* plans section */
+
+.payment-interval h2{
+    margin-bottom: 60px;
+}
+
+.payment-interval{
+    margin-bottom: 25px;
+}
+
+input{
+    padding: 3px;
+}
+
+span:not(:last-child){
+    padding-right: 48px;
+}
+
+.card{
+    border: solid 1px gray;
+    height: 100%;
+}
+
+.target{
+    text-align: center;
+    border-bottom: solid 1px black;
+    line-height: 35px;
+}
+
+.price::before{
+    content: ' \20AC';
+}
+
+.price{
+    margin-bottom: 16px;
+}
+
+.period::before{
+    content: ' \002F';
+
+}
+
+.plans .row{
+    row-gap: 50px;
+}
+
+.type-plane{
+    padding: 35px 0;
+}
+
+.plans h3{
+    padding-bottom: 16px;
+}
+
 
 /* utilities */
 
@@ -137,4 +212,17 @@ h1{
 
 .col-100{
     width: 100%;
+}
+
+/* debug rules */
+.debug [class^="container"]{
+    border: black 1px solid;
+}
+
+.debug .row{
+    border: green 1px solid;
+}
+
+.debug [class^="col"]{
+    border: red 1px solid;
 }
