@@ -300,6 +300,96 @@ input{
     padding-bottom: 200px;
 }
 
+/* user-tesstimonials */
+
+.find-more{
+    text-decoration: underline;
+    color: #0061FF;
+}
+
+.user-testimonial{
+    padding-bottom: 146px;
+}
+
+/* member-box */
+
+.member-box .column{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 42px;
+    height: 590px;
+    justify-content: flex-start;
+}
+
+.member-box .height-50{
+    height: 50%;
+}
+
+.img-white img{
+    display: block;
+    filter: invert(85%) sepia(51%) saturate(0%) hue-rotate(355deg) brightness(107%) contrast(102%);
+}
+
+.member-box .col-50{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.member-box .no-padding > *{
+    padding: 0;
+}
+
+.designit{
+    background-color: #A2D39B;
+    border: #D1E9CD 12px solid;
+}
+
+.a-s-u{
+    background-color: #61082B;
+}
+
+.university-of-florida{
+    background-color: #0093CE;
+}
+
+.topps{
+    background-color: #FF1C1C;
+}
+
+.world-bicycle-relief{
+    background-color: #D5001F;
+}
+
+.hearst-corp{
+    background-color: #B4D0E7;
+}
+
+.lonely-planet{
+    background-color: #0D2481;
+}
+
+.clear-channel{
+    background-color: #FFD830;
+}
+
+.bg-col-gray{
+    background-color: #F5F5F5;
+}
+
+.max-width-50{
+    max-width: 50%;
+}
+
+.member-box .style-div{
+    max-width: 100px;
+    border: #D5D5D7 1px solid;
+    margin-bottom: 2px;
+}
+
+
 /* utilities */
 
 .col-33{
@@ -308,6 +398,10 @@ input{
 
 .col-40{
     width: 40%;
+}
+
+.col-50{
+    width: 50%;
 }
 
 .col-60{
