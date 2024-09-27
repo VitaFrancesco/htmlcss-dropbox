@@ -227,6 +227,10 @@ input{
     padding: 12px 0;
 }
 
+.li-flex i{
+    text-align: center;
+}
+
 .style-div{
     max-width: 50px;
     border: 1px solid lightgray;
@@ -394,6 +398,7 @@ input{
 .to-your-company{
     padding: 130px 0;
     background-color: var(--section-bg-light-blue);
+    margin-bottom: 156px;
 }
 
 .to-your-company .white{
@@ -408,6 +413,28 @@ input{
 
 .to-your-company h2{
     margin: 0;
+}
+
+/* faq */
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 96px;
+    border-bottom: black 1px solid;
+}
+
+.question:first-of-type{
+    border-top: black 1px solid;
+}
+
+.faq i{
+    margin-right: 48px;
+}
+
+.faq{
+    margin-bottom: 148px;
 }
 
 /* utilities */
