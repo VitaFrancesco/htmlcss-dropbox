@@ -82,6 +82,12 @@ img{
     padding: 0 20px;
     line-height: 34px;
 }
+
+.link:hover{
+    text-decoration: underline;
+    color: #0061FF;
+}
+
 .row > *{
     padding: 0 25px;
 }
